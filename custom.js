@@ -43,3 +43,4 @@ document.getElementById('clear-filters').addEventListener('click', function() {
         video.style.display = 'block';
     });
 });
+
