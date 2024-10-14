@@ -1,0 +1,194 @@
+/* Custom header background and padding */
+.custom-header {
+    background-color: #e9ecef; /* Light grey background */
+    padding: 20px 0; /* Vertical padding */
+}
+
+/* Customize logo size */
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Header text styling */
+.header-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #041148;
+    padding-left: 15px; /* Spacing between logo and text */
+}
+
+/* Navigation button styles */
+.custom-nav-btn {
+    background-color: #e9ecef; /* Button background color */
+    color: #454545; /* Button text color */
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px;
+    border: none;
+}
+
+.custom-nav-btn:hover {
+    background-color: #041148; /* Darker on hover */
+    color: #fff;
+}
+
+/* Custom subheader background and padding */
+.custom-subheader {
+    background-color: #e9ecef;
+    padding: 15px 0;
+}
+
+/* Subheader text styling */
+.subheader-text {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8e0303;
+}
+
+/* Search bar styling */
+.custom-search-bar {
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+/* Search button styling */
+.custom-search-btn {
+    background-color: #dae0e5; /* Custom button color */
+    color: #555;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.custom-search-btn:hover {
+    background-color: #041148;
+    color: #fcfcfc;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header-text {
+        font-size: 1.5rem;
+    }
+
+    .subheader-text {
+        font-size: 1.2rem;
+    }
+
+    .custom-nav-btn, .custom-search-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}/* Custom navigation box styling */
+.custom-nav-box {
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #ddd; /* Border for the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+/* Set background color for the section containing the navigation box */
+/* Full-width background color for the section */
+.custom-bg {
+    background-color: #e9ecef; /* Custom background color */
+    padding: 20px 0; /* Optional: Add top/bottom padding */
+    width: 100%; /* Ensure it takes full width */
+}
+
+/* Optional: Give the container some padding for the content inside */
+.container-fluid {
+    padding-left: 50px;
+    padding-right: 15px;
+}
+
+/* Custom navigation box styling */
+.custom-nav-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-nav-box h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dropdown and checkbox styling */
+.dropdown ul {
+    list-style-type: none;
+    padding: left 0px; ;
+    font-family: 'Arial', sans-serif;
+}
+
+.dropdown ul li {
+    padding: 5px 12px;
+    font-family: 'Arial', sans-serif;
+}
+
+.dropdown ul label {
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #041148;
+    font-family: 'Arial', sans-serif;
+}
+
+.btn-secondary {
+    background-color: #041148;
+    font-family: 'Arial', sans-serif;
+}
+
+.dropdown-menu label {
+    padding: 10px;
+}
+
+/* Custom style for the Apply Filters button */
+/* Custom styling extending the Bootstrap dark button */
+.custom-dark-btn {
+    font-size: 1rem; /* Increase font size */
+    font-weight: 600;  /* Bold text */
+    padding: 5px 20px; /* Custom padding */
+    font-family: 'Arial', sans-serif;
+}
+
+.custom-dark-btn:hover {
+    background-color: #343a40; /* Darken the button slightly on hover */
+    border-color: #23272b;     /* Border color change on hover */
+}
+
+/* Optional: Additional custom styling for the Clear Filters button */
+.btn-light {
+    font-size: 1rem;
+    background-color:#dae0e5;
+    font-weight: 600;
+    padding: 5px 20px;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.btn-light:hover {
+    background-color: #f8f9fa; /* Slightly darker light grey on hover */
+    border-color: #dae0e5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .custom-nav-box {
+        margin-bottom: 20px;
+    }
+}
