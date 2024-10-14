@@ -73,21 +73,19 @@
     color: #fcfcfc;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .header-text {
-        font-size: 1.5rem;
-    }
 
     .subheader-text {
-        font-size: 1.2rem;
+        font-size: 2.5rem;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        color: #8e0303; /* Keep the original color or change if needed */
     }
 
     .custom-nav-btn, .custom-search-btn {
         padding: 8px 15px;
         font-size: 0.9rem;
     }
-}/* Custom navigation box styling */
+
 .custom-nav-box {
     background-color: #f8f9fa; /* Light background color */
     border: 1px solid #ddd; /* Border for the box */
@@ -133,6 +131,7 @@
 .dropdown ul li {
     padding: 5px 12px;
     font-family: 'Arial', sans-serif;
+    padding-left: -20px; /* Adjust this value to move items to the left */
 }
 
 .dropdown ul label {
@@ -140,16 +139,19 @@
     color: #555;
     cursor: pointer;
     font-family: 'Arial', sans-serif;
+    margin-left: -20; /* Ensure no additional margin on the label */
 }
 
 /* Buttons */
 .btn-primary {
     background-color: #041148;
+    border-color: #ffffff; 
     font-family: 'Arial', sans-serif;
 }
 
 .btn-secondary {
     background-color: #041148;
+    border-color: #ffffff; 
     font-family: 'Arial', sans-serif;
 }
 
@@ -191,4 +193,43 @@
     .custom-nav-box {
         margin-bottom: 20px;
     }
+}
+
+/* Style the checkbox */
+.custom-nav-box input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #041148; /* Border color for the checkbox */
+    border-radius: 3px; /* Optional: Rounded corners */
+    position: relative;
+    margin-right: 10px;
+}
+
+/* Style for when the checkbox is checked */
+.custom-nav-box input[type="checkbox"]:checked {
+    background-color: #041148; /* Custom background color when checked */
+    border-color: #041148; /* Ensure the border is the same color */
+}
+
+/* Optional: Add a checkmark when checked */
+.custom-nav-box input[type="checkbox"]:checked::after {
+    content: '✔';
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+/* Add padding and align items properly */
+.custom-nav-box label {
+    display: flex;
+    align-items: center;
+    padding: 5px 0; /* Add padding around the checkbox and label */
+    font-size: 1rem;
+}
+/* Alternatively, adjust the checkbox position */
+.custom-nav-box input[type="checkbox"] {
+    margin-left: -5; /* Remove or adjust margin for the checkbox itself */
 }
