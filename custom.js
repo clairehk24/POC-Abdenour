@@ -43,3 +43,41 @@ document.getElementById('clear-filters').addEventListener('click', function() {
         video.style.display = 'block';
     });
 });
+document.getElementById('sortNewest').addEventListener('click', function() {
+    sortVideos('newest');
+});
+
+document.getElementById('sortOldest').addEventListener('click', function() {
+    sortVideos('oldest');
+});
+
+function sortVideos(order) {
+    const videoContainer = document.querySelector('.video-list');
+    const videos = Array.from(videoContainer.querySelectorAll('.video-item'));
+
+    // Define a ranking system for the shorter date categories
+    const dateRank = {
+        '24hours': 5,
+        'week': 4,
+        'month': 3,
+        'year': 2,
+        'older': 1
+    };
+
+    // Sort the videos based on their data-date attribute (short text)
+    videos.sort(function(a, b) {
+        const dateA = dateRank[a.getAttribute('data-date').toLowerCase()];
+        const dateB = dateRank[b.getAttribute('data-date').toLowerCase()];
+
+        if (order === 'newest') {
+            return dateB - dateA; // Newest to oldest
+        } else {
+            return dateA - dateB; // Oldest to newest
+        }
+    });
+
+    // Re-arrange the videos in the DOM
+    videos.forEach(function(video) {
+        videoContainer.appendChild(video); // Moves the videos in sorted order
+    });
+}
