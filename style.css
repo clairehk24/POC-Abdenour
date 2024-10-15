@@ -1,3 +1,8 @@
+.container-fluid-max {
+    max-width: 1920px; /* or whatever maximum width you prefer */
+    margin-left: auto;
+    margin-right: auto;
+}
 /* Custom header background and padding */
 .custom-header {
     background-color: #e9ecef; /* Light grey background */
@@ -44,7 +49,7 @@
 
 /* Subheader text styling */
 .subheader-text {
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     color: #8e0303;
@@ -85,6 +90,7 @@
         padding: 8px 15px;
         font-size: 0.9rem;
     }
+    
 
     /* Custom navigation box styling */
 .custom-nav-box {
@@ -268,8 +274,10 @@
 
 /* Card Title */
 .card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight:500;
+    color: #041148;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px; /* Adds some space after the title */
 }
 
@@ -277,6 +285,7 @@
 .card-text {
     font-size: 0.9rem;
     color: #555;
+    font-family: 'Arial', sans-serif;
     margin-bottom: 10px; /* Adds some space after the description */
 }
 
@@ -314,7 +323,18 @@
 .long-description {
     font-size: 0.95rem;
     color: #333;
+    font-family: 'Arial', sans-serif;
     margin-top: 15px;
+}
+
+/* Style for the Modal Title */
+.modal-header .modal-title {
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold font */
+    color:#8e0303; /* Font color */
+    text-transform: uppercase; /* Optional: Transform text to uppercase */
+    letter-spacing: 1px; /* Optional: Adjust letter spacing */
 }
 
 /* Footer Styling */
